@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+
+/* universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* primary styles */
+.btn-primary {
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+/* body styles */
+body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* header styles */
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tittle {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-tittle img {
+    width: 100%;
+}
+
+.nav-tittle h2 {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.nav-tittle h2 span {
+    color: #FF5400;
+}
+
+.main-menu i {
+    display: none;
+}
+
+.main-menu ul {
+    display: flex;
+    gap: 2.75rem;
+    align-items: center;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.main-menu li .menu-home {
+    color: #FF5400;
+}
+
+/* banner styles */
+.banner {
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group-13-1-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 6.5rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+
+.banner h1 {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner p {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 2rem auto;
+}
+
+.banner .place-finder {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1.5rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    max-width: 800px;
+    padding: 1rem;
+}
+
+.banner input,
+.banner select {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+
+.banner button {
+    width: 100%;
+}
+
+/* main tag styles */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* our popular tour section styles */
+.popular-tour-conteiner {
+    display: flex;
+    gap: 3rem;
+    margin: 4rem auto;
+}
+
+.popular-tour-content {
+    height: 100%;
+}
+
+.popular-tour-content h2 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.popular-tour-content p,
+ul {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 1.5rem auto;
+}
+
+.popular-tour-content ul {
+    width: 80%;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 1.5rem auto;
+    margin-left: 2rem;
+}
+
+.popular-tour-img {
+    width: 100%;
+}
+
+.popular-tour-img img {
+    width: 100%;
+}
+
+/* Choose Your Destination section styles */
+.destination-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.destination-content h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.destination-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 2rem auto;
+}
+
+/* grid areas */
+.maldives{
+    grid-area: maldives;
+}
+.indonesia{
+    grid-area: indonesia;
+}
+.srilanka{
+    grid-area: srilanka;
+}
+.north-america{
+    grid-area: north-america;
+}
+.kashmir{
+    grid-area: kashmir;
+}
+.bangladesh{
+    grid-area: bangladesh;
+}
+.bandarban{
+    grid-area: bandarban;
+}
+.destination-images{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 'maldives maldives maldives maldives maldives maldives indonesia indonesia indonesia indonesia indonesia indonesia'
+    'srilanka srilanka srilanka srilanka north-america north-america north-america north-america north-america kashmir kashmir kashmir'
+    'bangladesh bangladesh bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban bandarban bandarban';
+}
+
+.destination-img {
+    position: relative;
+}
+
+.destination-img h3 {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.destination-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive styles here */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 1rem;
+    }
+
+    .nav-tittle h2 {
+        font-size: 2rem;
+    }
+
+    .main-menu ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .main-menu i {
+        display: block;
+    }
+
+    .main-menu i:hover+ul {
+        display: block;
+        align-items: flex-start;
+    }
+
+    .banner {
+        padding: 1.25rem;
+        margin: 0 auto;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner .place-finder {
+        flex-direction: column;
+        gap: .75rem;
+        justify-content: center;
+    }
+
+    .popular-tour-conteiner {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .destination-conteiner{
+        padding: 1rem;
+    }
+    .destination-images{
+        gap: 1rem;
+        grid-template-areas: 'maldives' 'indonesia' 'srilanka' 'north-america' 'kashmir' 'bangladesh' 'bandarban';
+    }
+    .destination-images img{
+        max-height: 200px;
+    }
+}
