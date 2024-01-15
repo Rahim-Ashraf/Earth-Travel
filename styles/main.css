@@ -10,13 +10,17 @@
 
 /* primary styles */
 .btn-primary {
-    color: #FFF;
     border: none;
     border-radius: 8px;
     background: #FF5400;
     font-size: 1rem;
     font-weight: 700;
     padding: 1rem;
+}
+
+button a {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 /* body styles */
@@ -211,33 +215,40 @@ ul {
 }
 
 /* grid areas */
-.maldives{
+.maldives {
     grid-area: maldives;
 }
-.indonesia{
+
+.indonesia {
     grid-area: indonesia;
 }
-.srilanka{
+
+.srilanka {
     grid-area: srilanka;
 }
-.north-america{
+
+.north-america {
     grid-area: north-america;
 }
-.kashmir{
+
+.kashmir {
     grid-area: kashmir;
 }
-.bangladesh{
+
+.bangladesh {
     grid-area: bangladesh;
 }
-.bandarban{
+
+.bandarban {
     grid-area: bandarban;
 }
-.destination-images{
+
+.destination-images {
     display: grid;
     gap: 1.5rem;
     grid-template-areas: 'maldives maldives maldives maldives maldives maldives indonesia indonesia indonesia indonesia indonesia indonesia'
-    'srilanka srilanka srilanka srilanka north-america north-america north-america north-america north-america kashmir kashmir kashmir'
-    'bangladesh bangladesh bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban bandarban bandarban';
+        'srilanka srilanka srilanka srilanka north-america north-america north-america north-america north-america kashmir kashmir kashmir'
+        'bangladesh bangladesh bangladesh bangladesh bangladesh bandarban bandarban bandarban bandarban bandarban bandarban bandarban';
 }
 
 .destination-img {
@@ -258,6 +269,262 @@ ul {
     border-radius: 20px;
 }
 
+/* why choose us section styles */
+.why-us-content {
+    max-width: 650px;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.why-us-content h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.why-us-content>p {
+    margin-top: 24px;
+}
+
+.reasons-to-choose {
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.reason1 {
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 48%;
+    margin: 0 auto;
+}
+
+.reason2 {
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 48%;
+    margin: 0 auto;
+}
+
+.reason3 {
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 48%;
+    margin: 0 auto;
+}
+
+.reason1 h3,
+.reason2 h3,
+.reason3 h3 {
+    margin-bottom: 1rem;
+    color: #131318;
+    font-size: 1.5;
+    font-weight: 800;
+}
+
+/* deals and discount section styles */
+.deals-tittles {
+    max-width: 650px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.deals-tittles h2 {
+    color: #131318;
+    font-size: 2.5;
+    font-weight: 800;
+}
+
+.deals-tittles p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.deals-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.deals-item1,
+.deals-item3 {
+    background: url('../Images/Group-39.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 3.5rem;
+}
+
+.deals-item2 {
+    background: url('../Images/Group-40.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 3.5rem;
+}
+
+.deals-content {
+    border-radius: 16px;
+    border: 2px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+    max-width: 600px;
+}
+
+.deals-item1 .deals-content {
+    float: right;
+}
+
+.deals-item2 .deals-content {
+    float: left;
+}
+
+.deals-item3 .deals-content {
+    float: right;
+}
+
+.deals-content .time-location {
+    display: flex;
+    gap: 10px;
+}
+
+.time-location i {
+    color: #FF5400;
+}
+
+.deals-content p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.deals-content h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.deals-content .price {
+    color: #FF5400;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.deals-conteiner button {
+    display: block;
+    margin: 50px auto;
+}
+
+/* perfect place section styles */
+.perfect-place-conteiner {
+    display: flex;
+    gap: 40px;
+}
+
+.perfect-place-content h2 {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+
+.perfect-place-content p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.perfect-place-content ul {
+    margin-left: 20px;
+}
+
+.perfect-place-content li {
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.perfect-place-conteiner video {
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* news letter section styles */
+.news-letter-conteiner {
+    display: flex;
+    gap: 1.5rem;
+    margin: 50px auto;
+    width: 100%;
+}
+.news-letter-content{
+    border: 1px solid #FF5400;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.news-letter-content h2 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.news-letter-content p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 20px 0px;
+}
+
+.news-letter-content input {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    background: rgba(19, 19, 24, 0.05);
+}
+.news-letter-content .news-letter-btn{
+    background-color: #FF5400;
+    color: #FFFFFF;
+}
+.news-letter-img{
+    position: relative;
+}
+.news-letter-img .img-banner{
+    position: absolute;
+    background-color: #FF5400;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 20px;
+    bottom: 30px;
+    right: 10px;
+    transform: rotate(-20deg);
+}
+.news-letter-img img {
+    width: 100%;
+}
 
 
 
@@ -268,8 +535,7 @@ ul {
 
 
 
-
-/* responsive styles here */
+/* nobile responsive styles here */
 @media screen and (max-width: 600px) {
     header {
         padding: 1rem;
@@ -313,14 +579,43 @@ ul {
         padding: 1rem;
         margin: 0 auto;
     }
-    .destination-conteiner{
+
+    .destination-conteiner {
         padding: 1rem;
     }
-    .destination-images{
+
+    .destination-images {
         gap: 1rem;
         grid-template-areas: 'maldives' 'indonesia' 'srilanka' 'north-america' 'kashmir' 'bangladesh' 'bandarban';
     }
-    .destination-images img{
+
+    .destination-images img {
         max-height: 200px;
     }
+
+    .why-us-conteiner {
+        padding: 1rem;
+    }
+
+    .reason1,
+    .reason2,
+    .reason3 {
+        width: 100%;
+    }
+
+    .deals-conteiner {
+        padding: 1rem;
+    }
+
+    .deals-item1,
+    .deals-item2,
+    .deals-item3 {
+        padding: 200px 20px 20px;
+    }
+
+    .perfect-place-conteiner, .news-letter-conteiner {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
 }
