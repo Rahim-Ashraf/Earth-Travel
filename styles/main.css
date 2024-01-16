@@ -293,7 +293,8 @@ ul {
     flex-wrap: wrap;
 
 }
-.reasons-to-choose .image{
+
+.reasons-to-choose .image {
     width: 100%;
     padding: 20px 0px;
 }
@@ -428,7 +429,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.deals-conteiner > button {
+.deals-conteiner>button {
     display: block;
     margin: 50px auto;
 }
@@ -438,7 +439,6 @@ ul {
     display: flex;
     gap: 40px;
 }
-
 .perfect-place-content h2 {
     color: #131318;
     font-size: 2.5rem;
@@ -464,36 +464,55 @@ ul {
     line-height: 26px;
     margin-bottom: 20px;
 }
-
-.perfect-place-conteiner video {
+.perfect-place-video{
+    position: relative;
+}
+.perfect-place-video video {
     border-radius: 20px;
     width: 100%;
 }
 
+.perfect-place-video p {
+    z-index: 1;
+    width: 300px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 36px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
 /* my custom made search top airlines styles */
-.airlines-tittles{
+.airlines-tittles {
     text-align: center;
     max-width: 600px;
     margin: 50px auto;
 }
-.airlines-tittles h2{
+
+.airlines-tittles h2 {
     color: #131318;
     font-size: 2rem;
     font-weight: 800;
     line-height: 60px;
 }
-.airlines-tittles p{
+
+.airlines-tittles p {
     color: #5A5A5D;
     font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
 }
-.airlnes{
+
+.airlnes {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
 }
-.airline-name{
+
+.airline-name {
     border-radius: 20px;
     background-color: #555050;
     color: #FFFFFF;
@@ -508,7 +527,8 @@ ul {
     margin: 50px auto;
     width: 100%;
 }
-.news-letter-content{
+
+.news-letter-content {
     border: 1px solid #FF5400;
     border-radius: 20px;
     padding: 40px;
@@ -540,14 +560,17 @@ ul {
     padding: 1rem;
     background: rgba(19, 19, 24, 0.05);
 }
-.news-letter-content .news-letter-btn{
+
+.news-letter-content .news-letter-btn {
     background-color: #FF5400;
     color: #FFFFFF;
 }
-.news-letter-img{
+
+.news-letter-img {
     position: relative;
 }
-.news-letter-img .img-banner{
+
+.news-letter-img .img-banner {
     position: absolute;
     background-color: #FF5400;
     color: #FFFFFF;
@@ -557,33 +580,48 @@ ul {
     right: 10px;
     transform: rotate(-20deg);
 }
+
 .news-letter-img img {
     width: 100%;
 }
 
 /* footer styles */
-footer{
+footer {
     width: 100%;
     background: rgba(19, 19, 24, 0.05);
     text-align: center;
     padding: 100px 300px;
 }
-.footer-tittle{
+
+.footer-tittle {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap: 2rem;
     margin-bottom: 1.5rem;
 }
-footer p{
+
+footer h2 {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+footer h2 span {
+    color: #FF5400;
+}
+
+footer p {
     margin-bottom: 1.5rem;
 }
-footer .icons{
+
+footer .icons {
     display: flex;
     gap: 2rem;
     justify-content: center;
 }
-footer hr{
+
+footer hr {
     margin: 2rem auto;
 }
 
@@ -672,26 +710,30 @@ footer hr{
     .deals-item3 {
         padding: 200px 20px 20px;
     }
-    .deals-content{
+
+    .deals-content {
         padding: 1rem;
     }
-    .deals-conteiner > button{
+
+    .deals-conteiner>button {
         display: none;
     }
 
-    .airlines-conteiner{
+    .airlines-conteiner {
         padding: 1rem;
     }
-    .airlnes{
+
+    .airlnes {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .perfect-place-conteiner, .news-letter-conteiner {
+    .perfect-place-conteiner,
+    .news-letter-conteiner {
         flex-direction: column;
         padding: 1rem;
     }
 
-    footer{
+    footer {
         padding: 2rem;
     }
 }
