@@ -293,6 +293,10 @@ ul {
     flex-wrap: wrap;
 
 }
+.reasons-to-choose .image{
+    width: 100%;
+    padding: 20px 0px;
+}
 
 .reason1 {
     padding: 2rem;
@@ -464,6 +468,37 @@ ul {
 .perfect-place-conteiner video {
     border-radius: 20px;
     width: 100%;
+}
+
+/* my custom made search top airlines styles */
+.airlines-tittles{
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+.airlines-tittles h2{
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+.airlines-tittles p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.airlnes{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.airline-name{
+    border-radius: 20px;
+    background-color: #555050;
+    color: #FFFFFF;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px 0px #FF5400;
 }
 
 /* news letter section styles */
@@ -642,6 +677,13 @@ footer hr{
     }
     .deals-conteiner > button{
         display: none;
+    }
+
+    .airlines-conteiner{
+        padding: 1rem;
+    }
+    .airlnes{
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .perfect-place-conteiner, .news-letter-conteiner {
